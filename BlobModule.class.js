@@ -1,7 +1,7 @@
 /**
   * A collection of function related with blob(Binary Large OBject).
   * @version 1.0
-  * @since 1.0
+  * @license MIT ( http://opensource.org/licenses/MIT )
   * @author jiyu ( https://github.com/jiyu3 )
   */
 class BlobModule {

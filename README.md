@@ -1,2 +1,2 @@
 # blobModule
-a collection of function related with blob(Binary Large OBject).
+This is a collection of function related with blob(Binary Large OBject).

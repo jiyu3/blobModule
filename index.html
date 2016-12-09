@@ -1,11 +1,26 @@
 <html>
 <head>
 <script src="./BlobModule.class.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 <h1>BlobModule Demo</h1>
 <script>
+$(function(){
+	blob = new BlobModule();
 
+	document.getElementById( "file" ).addEventListener( "change", function() {
+		var fileList = this.files;
+		for(var i=0, l=fileList.length; l>i; i++)
+			blob.download(fileList[i]);
+	});
+});
 </script>
+
+<input type="file" multiple id="file">
+
 </body>
 </html>
